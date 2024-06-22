@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "AiCovergen"
+version = "0.1.0"
+description = "An autonomous pipeline to create covers with any RVC v2 trained AI voice from YouTube videos or a local audio file. For developers who may want to add a singing functionality into their AI assistant/chatbot/vtuber, or for people who want to hear their favourite characters sing their favourite song."
+authors = [
+    { name="Nex432", email="laynzch@example.com" },
+]
+license = { file="LICENSE" }
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Nex432/AiCovergen"
+
+[project.dependencies]
+deemix = "*"
+fairseq = "==0.12.2"
+faiss-cpu = "==1.7.3"
+ffmpeg-python = ">=0.2.0"
+gradio = "==3.39.0"
+lib = "==4.0.0"
+librosa = "==0.9.1"
+numpy = "==1.23.5"
+onnxruntime-gpu = "*"
+praat-parselmouth = ">=0.4.2"
+pedalboard = "==0.7.7"
+pydub = "==0.25.1"
+pyworld = "==0.3.4"
+requests = "==2.31.0"
+scipy = "==1.11.1"
+soundfile = "==0.12.1"
+torch = {version = "==2.0.1+cu118", index = "https://download.pytorch.org/whl/torch_stable.html"}
+torchcrepe = "==0.0.20"
+tqdm = "==4.65.0"
+yt-dlp = "==2023.7.6"
+sox = "==1.4.1"
+gdown = "==4.6.3"
