@@ -1,1 +1,1 @@
-import AiCoverGen.Main
+import AiCoverGen.main
